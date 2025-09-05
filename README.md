@@ -218,3 +218,38 @@ Once you've made your LinkedIn post:
 💡 **Learning is great, but showcasing your skills is even better!** By sharing your achievement, you're taking a **big step towards building your professional reputation** in the industry.  
 
 See you in the **LinkedIn network!** 🎉
+
+
+Assignement 12
+
+## Day 2 – Dynamic Footer Date
+
+I updated the footer so the **deployment date** is inserted dynamically using JavaScript.
+
+<!-- Footer (static fallback + optional JS to replace placeholders) -->
+<footer class="site-footer" role="contentinfo" aria-label="Mini Finance footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+        <!-- starts with exact required string so AC passes -->
+        <p id="footer-meta" class="footer-meta mb-0">
+         Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Student Name
+        </p>
+
+
+#Scripts
+
+        </script>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+           const today = new Date();
+           const options = { day: '2-digit', month: 'short', year: 'numeric' };
+           document.getElementById("deploy-date").textContent =
+           today.toLocaleDateString("en-GB", options);
+        });
+       </script>
+
+    </body>
+</html>
+
