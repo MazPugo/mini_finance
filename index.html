@@ -583,7 +583,10 @@ Bootstrap 5 Dashboard Admin Template
     <div class="row align-items-center">
       <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
         <!-- starts with exact required string so AC passes -->
-        <p id="footer-meta" class="footer-meta mb-0">Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By &lt;Student Name&gt;</p>
+        <p id="footer-meta" class="footer-meta mb-0">
+         Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Student Name
+        </p>
+
       </div>
 
       <div class="col-md-6 text-md-end text-center">
@@ -691,9 +694,12 @@ Bootstrap 5 Dashboard Admin Template
         </script>
 
         <script>
-         const today = new Date();
-         const options = { day: '2-digit', month: 'short', year: 'numeric' };
-         document.getElementById('deploy-date').textContent = today.toLocaleDateString('en-GB', options);
+          document.addEventListener("DOMContentLoaded", function () {
+           const today = new Date();
+           const options = { day: '2-digit', month: 'short', year: 'numeric' };
+           document.getElementById("deploy-date").textContent =
+           today.toLocaleDateString("en-GB", options);
+        });
        </script>
 
     </body>
