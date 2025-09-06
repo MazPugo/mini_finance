@@ -9,6 +9,7 @@
 
         <title>Mini Finance Dashboard Template</title>
 
+
         <!-- CSS FILES -->      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
@@ -40,15 +41,24 @@ Bootstrap 5 Dashboard Admin Template
             <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
                 <a class="navbar-brand" href="index.html">
                     <i class="bi-box"></i>
-                    Mini Finance
+                    Mini Finance — Simple Personal Budget Tracker
                 </a>
             </div>
 
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <button class="navbar-toggler position-absolute end-0 me-3 d-md-none collapsed" 
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#sidebarMenu" 
+             aria-controls="sidebarMenu" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
 
-            <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
+            <form class="custom-form header-form ms-auto" action="#" method="get" role="form">
                 <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
             </form>
 
@@ -173,8 +183,8 @@ Bootstrap 5 Dashboard Admin Template
                                     <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid me-3" alt="">
 
                                     <div class="d-flex flex-column">
-                                        <small>Thomas</small>
-                                        <a href="#">thomas@site.com</a>
+                                        <small>Marzena</small>
+                                        <a href="#">marzena@example.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -271,8 +281,8 @@ Bootstrap 5 Dashboard Admin Template
                 <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
                     <div class="title-group mb-3">
                         <h1 class="h2 mb-0">Overview</h1>
+                         <h2>Track expenses, spot trends, and stay on budget — fast.</h2>
 
-                        <small class="text-muted">Hello Thomas, welcome back!</small>
                     </div>
 
                     <div class="row my-4">
@@ -297,7 +307,7 @@ Bootstrap 5 Dashboard Admin Template
 
                                     <div class="ms-auto">
                                         <small>Card Holder</small>
-                                        <p>Thomas</p>
+                                        <p>Marzena</p>
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +432,7 @@ Bootstrap 5 Dashboard Admin Template
                             </div>
                         </div>
 
-                        <div class="col-lg-5 col-12">
+                         <div class="col-lg-5 col-12">
                             <div class="custom-block custom-block-profile-front custom-block-profile text-center bg-white">
                                 <div class="custom-block-profile-image-wrap mb-4">
                                     <img src="images/medium-shot-happy-man-smiling.jpg" class="custom-block-profile-image img-fluid" alt="">
@@ -430,25 +440,22 @@ Bootstrap 5 Dashboard Admin Template
                                     <a href="setting.html" class="bi-pencil-square custom-block-edit-icon"></a>
                                 </div>
 
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>Name:</strong>
+                                  <p class="d-flex mb-2">
+                                    <strong class="me-2">Name:</strong>
+                                    <span>Marzena Pugo</span>
+                                 </p>
 
-                                    <span>Thomas Edison</span>
-                                </p>
+                                 <p class="d-flex mb-2">
+                                  <strong class="me-2">Email:</strong>
+                                  <a href="#">marzena@example.com</a>
+                                 </p>
 
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>Email:</strong>
-                                    
-                                    <a href="#">
-                                        thomas@site.com
-                                    </a>
-                                </p>
-
+                    
                                 <p class="d-flex flex-wrap mb-0">
                                     <strong>Phone:</strong>
 
                                     <a href="#">
-                                        (60) 12 345 6789
+                                        0786822081
                                     </a>
                                 </p>
                             </div>
@@ -581,10 +588,15 @@ Bootstrap 5 Dashboard Admin Template
 <footer class="site-footer" role="contentinfo" aria-label="Mini Finance footer">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
-        <!-- starts with exact required string so AC passes -->
+      <div class="col-md-12 text-center">
         <p id="footer-meta" class="footer-meta mb-0">
-         Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Student Name
+          Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Marzena Pugo
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
         </p>
 
       </div>
@@ -700,7 +712,17 @@ Bootstrap 5 Dashboard Admin Template
            document.getElementById("deploy-date").textContent =
            today.toLocaleDateString("en-GB", options);
         });
-       </script>
+        </script>
+
+        <script>
+          // Day 2: date
+          document.getElementById("deploy-date").textContent =
+            new Date().toLocaleDateString();
+
+          // Day 4: commit hash (replace with actual value)
+          document.getElementById("3ce8a61").textContent = "abc123";
+        </script>
+
 
     </body>
 </html>
