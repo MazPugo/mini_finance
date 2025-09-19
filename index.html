@@ -372,7 +372,7 @@ Bootstrap 5 Dashboard Admin Template
                                         <img src="images/flag/united-kingdom.png" class="exchange-image img-fluid" alt="">
 
                                         <div>
-                                            <p>GPD</p>
+                                            <p>GBP</p>
                                             <h6>1 British Pound</h6>
                                         </div>
                                     </div>
@@ -519,6 +519,7 @@ Bootstrap 5 Dashboard Admin Template
                                 <div class="d-flex flex-wrap align-items-center mb-4">
                                     <div class="d-flex align-items-center">
                                         <img src="images/profile/young-beautiful-woman-pink-warm-sweater.jpg" class="profile-image img-fluid" alt="">
+                                        
 
                                         <div>
                                             <p>
@@ -564,7 +565,7 @@ Bootstrap 5 Dashboard Admin Template
                                 <h5 class="text-white mb-4">Send Money</h5>
 
                                 <a href="#">
-                                    <img src="images/profile/young-woman-with-round-glasses-yellow-sweater.jpg" class="profile-image img-fluid" alt="">
+                                    <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid" alt="">
                                 </a>
 
                                 <a href="#">
@@ -585,17 +586,23 @@ Bootstrap 5 Dashboard Admin Template
                         </div>
                     </div>
 <!-- Footer (static fallback + optional JS to replace placeholders) -->
-<footer class="site-footer" role="contentinfo" aria-label="Mini Finance footer">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-12 text-center">
-        <p id="footer-meta" class="footer-meta mb-0">
-          Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Marzena Pugo
-        </p>
-      </div>
-    </div>
+<footer class="site-footer bg-light py-4" role="contentinfo">
+  <div class="container text-center">
+    Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — rev: <span id="commit-hash"></span>
   </div>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Insert build metadata
+    document.getElementById("deploy-date").textContent = new Date().toLocaleDateString("en-GB");
+
+    // Replace with actual commit hash or env tag during deployment
+    document.getElementById("commit-hash").textContent = "abc123 - by Marzena Pugo";
+  });
+</script>
+
+
 
         </p>
 

@@ -11,12 +11,13 @@ https://www.tooplate.com/view/2135-mini-finance
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #E63946;
-  --secondary-color:              #F1FAEE;
-  --section-bg-color:             #ececec;
+  --primary-color:                #5d52ba;
+  --secondary-color:              #0dcaf0;
+  --section-bg-color:             #f0f8ff;
   --primary-bg-color:             #E63946;
-  --custom-btn-bg-color:          #A8DADC;
+  --custom-btn-bg-color:          #198754;
   --custom-btn-bg-hover-color:    #1D3557;
+  -social-icon-link-bg-color:     #7f73eb;
   --heading-color:                #1D3557;
   --dark-color:                   #000000;
   --p-color:                      #717275;
